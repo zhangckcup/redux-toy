@@ -4,7 +4,7 @@
  */
 import createStore from "./createStore.js";
 import combineReducers from "./combineReducers.js";
-import { counterReducer } from "./states/conter.js";
+import { counterReducer } from "./states/counter.js";
 import { infoReducer } from "./states/info.js";
 
 const reducer = combineReducers({

@@ -1,6 +1,6 @@
 import createStore from "./createStore.js";
 import combineReducers from "./combineReducers.js";
-import { counter, counterReducer } from "./states/conter.js";
+import { counter, counterReducer } from "./states/counter.js";
 import { infoState, infoReducer } from "./states/info.js";
 
 // const initState = {
@@ -33,3 +33,5 @@ store.dispatch({
 store.dispatch({
   type: 'INCREMENT',
 });
+
+console.dir(store.getState());
