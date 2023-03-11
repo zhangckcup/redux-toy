@@ -23,43 +23,11 @@ export default function createStore(reducer, initState) {
     return state;
   }
 
+  dispatch({ type: Symbol() })
+
   return {
     subscribe,
     dispatch,
     getState,
   }
 }
-
-// function plan(state, action) {
-//   switch (action.type) {
-//     case 'INCREMENT':
-//       return {
-//         ...state,
-//         count: state.count + 1
-//       }
-//     case 'DECREMENT':
-//       return {
-//         ...state,
-//         count: state.count -1
-//       }
-//     default:
-//       return state;
-//   }
-// }
-
-// const store = createStore(plan, {
-//   count: 0,
-// });
-
-// store.subscribe(() => {
-//   const state = store.getState();
-//   console.log(state.count);
-// });
-
-// store.changeState({
-//   type: 'INCREMENT'
-// });
-
-// store.changeState({
-//   count: 'abs'
-// });

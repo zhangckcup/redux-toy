@@ -1,12 +1,11 @@
+/**
+ * state 的拆分和合并
+ * 在 reducer 中加入初始化部分后，不传入 initState 也可初始化
+ */
 import createStore from "./createStore.js";
 import combineReducers from "./combineReducers.js";
-import { counter, counterReducer } from "./states/conter.js";
-import { infoState, infoReducer } from "./states/info.js";
-
-// const initState = {
-//   counter,
-//   info: infoState,
-// };
+import { counterReducer } from "./states/conter.js";
+import { infoReducer } from "./states/info.js";
 
 const reducer = combineReducers({
   counter: counterReducer,
